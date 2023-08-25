@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.phonesyncmessenger"
+    namespace = "com.phonesyncmessenger"
     compileSdk = 33
 
     defaultConfig {
-        applicationId = "com.example.phonesyncmessenger"
+        applicationId = "com.phonesyncmessenger"
         minSdk = 21
         targetSdk = 33
         versionCode = 1

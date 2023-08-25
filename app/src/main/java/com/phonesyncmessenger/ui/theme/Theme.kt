@@ -1,4 +1,4 @@
-package com.example.phonesyncmessenger.ui.theme
+package com.phonesyncmessenger.ui.theme
 
 import android.app.Activity
 import android.os.Build

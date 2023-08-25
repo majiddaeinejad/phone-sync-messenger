@@ -1,4 +1,4 @@
-package com.example.phonesyncmessenger.ui.theme
+package com.phonesyncmessenger.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

@@ -1,12 +1,16 @@
-package com.example.phonesyncmessenger
+package com.phonesyncmessenger
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
+import kotlinx.coroutines.sync.Mutex
+import kotlinx.coroutines.sync.withLock
 
 import org.junit.Test
 import org.junit.runner.RunWith
 
 import org.junit.Assert.*
+import java.util.concurrent.locks.ReentrantLock
+import kotlin.concurrent.withLock
 
 /**
  * Instrumented test, which will execute on an Android device.
@@ -17,8 +21,12 @@ import org.junit.Assert.*
 class ExampleInstrumentedTest {
     @Test
     fun useAppContext() {
+        val a = ReentrantLock()
+        a.withLock {  }
+        val mutex = Mutex()
+
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.example.phonesyncmessenger", appContext.packageName)
+        assertEquals("com.phonesyncmessenger", appContext.packageName)
     }
 }

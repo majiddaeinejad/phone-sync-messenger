@@ -1,4 +1,4 @@
-package com.example.phonesyncmessenger
+package com.phonesyncmessenger
 
 import org.junit.Test
 
